@@ -1,0 +1,2864 @@
+{
+  "meta": {
+    "gerado_em": "2026-09-03",
+    "segmento": "TEC",
+    "conta": "Anhanguera",
+    "ticket_medio": 214.0,
+    "total_reguas": 9,
+    "reguas_completas": 8,
+    "reguas_parciais": 1,
+    "periodos_quinzenais": [
+      {
+        "id": "Q1",
+        "label": "Q1 — 01/07–15/07/2026",
+        "mes": "Julho"
+      },
+      {
+        "id": "Q2",
+        "label": "Q2 — 16/07–31/07/2026",
+        "mes": "Julho"
+      },
+      {
+        "id": "Q3",
+        "label": "Q3 — 01/08–15/08/2026",
+        "mes": "Agosto"
+      },
+      {
+        "id": "Q4",
+        "label": "Q4 — 16/08–31/08/2026",
+        "mes": "Agosto"
+      },
+      {
+        "id": "Q5",
+        "label": "Q5 — 01/09–02/09/2026 (parcial)",
+        "mes": "Setembro"
+      }
+    ],
+    "periodos_mensais": [
+      {
+        "id": "JUL",
+        "label": "Julho 2026",
+        "componentes": [
+          "Q1",
+          "Q2"
+        ]
+      },
+      {
+        "id": "AGO",
+        "label": "Agosto 2026",
+        "componentes": [
+          "Q3",
+          "Q4"
+        ]
+      },
+      {
+        "id": "SET",
+        "label": "Setembro 2026 (parcial)",
+        "componentes": [
+          "Q5"
+        ]
+      }
+    ]
+  },
+  "reguas": [
+    {
+      "id": "3511",
+      "nome_completo": "anhanguerabr_3511_flx_tec_anhanguera_semi_inscrito tec",
+      "nome_curto": "Semi Inscrito TEC",
+      "canais": [
+        "Email",
+        "WhatsApp",
+        "SMS"
+      ],
+      "status": "completo",
+      "obs": "",
+      "periodos": {
+        "Q1": {
+          "leads": 1401,
+          "enviados": 6929,
+          "entregues": 6289,
+          "tx_entrega": 90.76,
+          "conv_total": 1,
+          "conv_direta": 1,
+          "conv_assist": 0,
+          "tx_conv": 0.07,
+          "receita": 214.0,
+          "email": {
+            "enviados": 3949,
+            "entregues": 3816,
+            "opens": 519,
+            "clicks": 10,
+            "conv": 0,
+            "tx_entrega": 96.63,
+            "tx_abertura": 13.6,
+            "tx_clique": 0.25,
+            "ctor": 1.93
+          },
+          "whatsapp": {
+            "enviados": 1049,
+            "entregues": 810,
+            "opens": 361,
+            "clicks": 30,
+            "conv": 1,
+            "tx_entrega": 77.22,
+            "tx_abertura": 44.57,
+            "tx_clique": 2.86,
+            "ctor": 8.31
+          },
+          "sms": {
+            "enviados": 1931,
+            "entregues": 1663,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 86.12,
+            "tx_clique": 0.05
+          },
+          "webpush": null
+        },
+        "Q2": {
+          "leads": 1556,
+          "enviados": 7397,
+          "entregues": 6678,
+          "tx_entrega": 90.28,
+          "conv_total": 1,
+          "conv_direta": 1,
+          "conv_assist": 0,
+          "tx_conv": 0.06,
+          "receita": 214.0,
+          "email": {
+            "enviados": 4257,
+            "entregues": 4076,
+            "opens": 477,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 95.75,
+            "tx_abertura": 11.7,
+            "tx_clique": 0.02,
+            "ctor": 0.21
+          },
+          "whatsapp": {
+            "enviados": 1098,
+            "entregues": 829,
+            "opens": 374,
+            "clicks": 31,
+            "conv": 1,
+            "tx_entrega": 75.5,
+            "tx_abertura": 45.11,
+            "tx_clique": 2.82,
+            "ctor": 8.29
+          },
+          "sms": {
+            "enviados": 2042,
+            "entregues": 1773,
+            "clicks": 4,
+            "conv": 0,
+            "tx_entrega": 86.83,
+            "tx_clique": 0.2
+          },
+          "webpush": null
+        },
+        "Q3": {
+          "leads": 8427,
+          "enviados": 54026,
+          "entregues": 47556,
+          "tx_entrega": 88.02,
+          "conv_total": 5,
+          "conv_direta": 5,
+          "conv_assist": 0,
+          "tx_conv": 0.06,
+          "receita": 1070.0,
+          "email": {
+            "enviados": 31900,
+            "entregues": 30300,
+            "opens": 3307,
+            "clicks": 37,
+            "conv": 2,
+            "tx_entrega": 94.98,
+            "tx_abertura": 10.91,
+            "tx_clique": 0.12,
+            "ctor": 1.12
+          },
+          "whatsapp": {
+            "enviados": 6862,
+            "entregues": 4642,
+            "opens": 1850,
+            "clicks": 76,
+            "conv": 3,
+            "tx_entrega": 67.65,
+            "tx_abertura": 39.85,
+            "tx_clique": 1.11,
+            "ctor": 4.11
+          },
+          "sms": {
+            "enviados": 15200,
+            "entregues": 12600,
+            "clicks": 36,
+            "conv": 0,
+            "tx_entrega": 82.89,
+            "tx_clique": 0.24
+          },
+          "webpush": null
+        },
+        "Q4": {
+          "leads": 2449,
+          "enviados": 21709,
+          "entregues": 19686,
+          "tx_entrega": 90.68,
+          "conv_total": 2,
+          "conv_direta": 2,
+          "conv_assist": 0,
+          "tx_conv": 0.08,
+          "receita": 428.0,
+          "email": {
+            "enviados": 12400,
+            "entregues": 12000,
+            "opens": 1907,
+            "clicks": 18,
+            "conv": 0,
+            "tx_entrega": 96.77,
+            "tx_abertura": 15.89,
+            "tx_clique": 0.15,
+            "ctor": 0.94
+          },
+          "whatsapp": {
+            "enviados": 3309,
+            "entregues": 2539,
+            "opens": 1174,
+            "clicks": 49,
+            "conv": 2,
+            "tx_entrega": 76.73,
+            "tx_abertura": 46.24,
+            "tx_clique": 1.48,
+            "ctor": 4.17
+          },
+          "sms": {
+            "enviados": 6018,
+            "entregues": 5192,
+            "clicks": 15,
+            "conv": 0,
+            "tx_entrega": 86.27,
+            "tx_clique": 0.25
+          },
+          "webpush": null
+        },
+        "Q5": {
+          "leads": 151,
+          "enviados": 1213,
+          "entregues": 1097,
+          "tx_entrega": 90.44,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 675,
+            "entregues": 653,
+            "opens": 156,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 96.74,
+            "tx_abertura": 23.89,
+            "tx_clique": 0.15,
+            "ctor": 0.64
+          },
+          "whatsapp": {
+            "enviados": 213,
+            "entregues": 159,
+            "opens": 72,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 74.65,
+            "tx_abertura": 45.28,
+            "tx_clique": 2.82,
+            "ctor": 8.33
+          },
+          "sms": {
+            "enviados": 325,
+            "entregues": 285,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 87.69,
+            "tx_clique": 0.62
+          },
+          "webpush": null
+        },
+        "JUL": {
+          "leads": 2957,
+          "enviados": 14326,
+          "entregues": 12967,
+          "tx_entrega": 90.51,
+          "conv_total": 2,
+          "conv_direta": 2,
+          "conv_assist": 0,
+          "tx_conv": 0.07,
+          "receita": 428.0,
+          "email": {
+            "enviados": 8206,
+            "entregues": 7892,
+            "opens": 996,
+            "clicks": 11,
+            "conv": 0,
+            "tx_entrega": 96.17,
+            "tx_abertura": 12.62,
+            "tx_clique": 0.13,
+            "ctor": 1.1
+          },
+          "whatsapp": {
+            "enviados": 2147,
+            "entregues": 1639,
+            "opens": 735,
+            "clicks": 61,
+            "conv": 2,
+            "tx_entrega": 76.34,
+            "tx_abertura": 44.84,
+            "tx_clique": 2.84,
+            "ctor": 8.3
+          },
+          "sms": {
+            "enviados": 3973,
+            "entregues": 3436,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 86.48,
+            "tx_clique": 0.13
+          },
+          "webpush": null
+        },
+        "AGO": {
+          "leads": 10876,
+          "enviados": 75735,
+          "entregues": 67242,
+          "tx_entrega": 88.79,
+          "conv_total": 7,
+          "conv_direta": 7,
+          "conv_assist": 0,
+          "tx_conv": 0.06,
+          "receita": 1498.0,
+          "email": {
+            "enviados": 44300,
+            "entregues": 42300,
+            "opens": 5214,
+            "clicks": 55,
+            "conv": 2,
+            "tx_entrega": 95.49,
+            "tx_abertura": 12.33,
+            "tx_clique": 0.12,
+            "ctor": 1.05
+          },
+          "whatsapp": {
+            "enviados": 10171,
+            "entregues": 7181,
+            "opens": 3024,
+            "clicks": 125,
+            "conv": 5,
+            "tx_entrega": 70.6,
+            "tx_abertura": 42.11,
+            "tx_clique": 1.23,
+            "ctor": 4.13
+          },
+          "sms": {
+            "enviados": 21218,
+            "entregues": 17792,
+            "clicks": 51,
+            "conv": 0,
+            "tx_entrega": 83.85,
+            "tx_clique": 0.24
+          },
+          "webpush": null
+        },
+        "SET": {
+          "leads": 151,
+          "enviados": 1213,
+          "entregues": 1097,
+          "tx_entrega": 90.44,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 675,
+            "entregues": 653,
+            "opens": 156,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 96.74,
+            "tx_abertura": 23.89,
+            "tx_clique": 0.15,
+            "ctor": 0.64
+          },
+          "whatsapp": {
+            "enviados": 213,
+            "entregues": 159,
+            "opens": 72,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 74.65,
+            "tx_abertura": 45.28,
+            "tx_clique": 2.82,
+            "ctor": 8.33
+          },
+          "sms": {
+            "enviados": 325,
+            "entregues": 285,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 87.69,
+            "tx_clique": 0.62
+          },
+          "webpush": null
+        }
+      }
+    },
+    {
+      "id": "3704",
+      "nome_completo": "anhanguerabr_3704_flx_tec_anhanguera_semi_inscrito_tec",
+      "nome_curto": "Semi Inscrito TEC v2",
+      "canais": [
+        "Email",
+        "WhatsApp",
+        "SMS",
+        "Web Push"
+      ],
+      "status": "completo",
+      "obs": "",
+      "periodos": {
+        "Q1": {
+          "leads": 1887,
+          "enviados": 8392,
+          "entregues": 7440,
+          "tx_entrega": 88.66,
+          "conv_total": 2,
+          "conv_direta": 2,
+          "conv_assist": 0,
+          "tx_conv": 0.11,
+          "receita": 428.0,
+          "email": {
+            "enviados": 3071,
+            "entregues": 2965,
+            "opens": 789,
+            "clicks": 40,
+            "conv": 2,
+            "tx_entrega": 96.55,
+            "tx_abertura": 26.61,
+            "tx_clique": 1.3,
+            "ctor": 5.07
+          },
+          "whatsapp": {
+            "enviados": 19,
+            "entregues": 11,
+            "opens": 10,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 57.89,
+            "tx_abertura": 90.91,
+            "tx_clique": 5.26,
+            "ctor": 10.0
+          },
+          "sms": {
+            "enviados": 5107,
+            "entregues": 4397,
+            "clicks": 24,
+            "conv": 0,
+            "tx_entrega": 86.1,
+            "tx_clique": 0.47
+          },
+          "webpush": {
+            "enviados": 195,
+            "entregues": 67,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 34.36,
+            "tx_clique": 0.0
+          }
+        },
+        "Q2": {
+          "leads": 8698,
+          "enviados": 35241,
+          "entregues": 30175,
+          "tx_entrega": 85.62,
+          "conv_total": 3,
+          "conv_direta": 3,
+          "conv_assist": 0,
+          "tx_conv": 0.03,
+          "receita": 642.0,
+          "email": {
+            "enviados": 12600,
+            "entregues": 12000,
+            "opens": 2824,
+            "clicks": 103,
+            "conv": 3,
+            "tx_entrega": 95.24,
+            "tx_abertura": 23.53,
+            "tx_clique": 0.82,
+            "ctor": 3.65
+          },
+          "whatsapp": {
+            "enviados": 129,
+            "entregues": 81,
+            "opens": 44,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 62.79,
+            "tx_abertura": 54.32,
+            "tx_clique": 0.78,
+            "ctor": 2.27
+          },
+          "sms": {
+            "enviados": 21800,
+            "entregues": 18000,
+            "clicks": 58,
+            "conv": 0,
+            "tx_entrega": 82.57,
+            "tx_clique": 0.27
+          },
+          "webpush": {
+            "enviados": 742,
+            "entregues": 188,
+            "clicks": 4,
+            "conv": 0,
+            "tx_entrega": 25.34,
+            "tx_clique": 0.54
+          }
+        },
+        "Q3": {
+          "leads": 2977,
+          "enviados": 25223,
+          "entregues": 22223,
+          "tx_entrega": 88.11,
+          "conv_total": 1,
+          "conv_direta": 1,
+          "conv_assist": 0,
+          "tx_conv": 0.03,
+          "receita": 214.0,
+          "email": {
+            "enviados": 10400,
+            "entregues": 9952,
+            "opens": 2251,
+            "clicks": 70,
+            "conv": 1,
+            "tx_entrega": 95.69,
+            "tx_abertura": 22.62,
+            "tx_clique": 0.67,
+            "ctor": 3.11
+          },
+          "whatsapp": {
+            "enviados": 44,
+            "entregues": 32,
+            "opens": 27,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 72.73,
+            "tx_abertura": 84.38,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "sms": {
+            "enviados": 14300,
+            "entregues": 12100,
+            "clicks": 43,
+            "conv": 0,
+            "tx_entrega": 84.62,
+            "tx_clique": 0.3
+          },
+          "webpush": {
+            "enviados": 486,
+            "entregues": 139,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 28.6,
+            "tx_clique": 0.0
+          }
+        },
+        "Q4": {
+          "leads": 2088,
+          "enviados": 10470,
+          "entregues": 9361,
+          "tx_entrega": 89.41,
+          "conv_total": 1,
+          "conv_direta": 1,
+          "conv_assist": 0,
+          "tx_conv": 0.05,
+          "receita": 214.0,
+          "email": {
+            "enviados": 3996,
+            "entregues": 3864,
+            "opens": 1147,
+            "clicks": 41,
+            "conv": 0,
+            "tx_entrega": 96.7,
+            "tx_abertura": 29.68,
+            "tx_clique": 1.03,
+            "ctor": 3.57
+          },
+          "whatsapp": {
+            "enviados": 33,
+            "entregues": 22,
+            "opens": 14,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 66.67,
+            "tx_abertura": 63.64,
+            "tx_clique": 6.06,
+            "ctor": 14.29
+          },
+          "sms": {
+            "enviados": 6121,
+            "entregues": 5336,
+            "clicks": 22,
+            "conv": 1,
+            "tx_entrega": 87.18,
+            "tx_clique": 0.36
+          },
+          "webpush": {
+            "enviados": 320,
+            "entregues": 139,
+            "clicks": 4,
+            "conv": 0,
+            "tx_entrega": 43.44,
+            "tx_clique": 1.25
+          }
+        },
+        "Q5": {
+          "leads": 172,
+          "enviados": 864,
+          "entregues": 767,
+          "tx_entrega": 88.77,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 358,
+            "entregues": 337,
+            "opens": 93,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 94.13,
+            "tx_abertura": 27.6,
+            "tx_clique": 1.4,
+            "ctor": 5.38
+          },
+          "whatsapp": {
+            "enviados": 6,
+            "entregues": 5,
+            "opens": 1,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 83.33,
+            "tx_abertura": 20.0,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "sms": {
+            "enviados": 473,
+            "entregues": 412,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 87.1,
+            "tx_clique": 1.06
+          },
+          "webpush": {
+            "enviados": 27,
+            "entregues": 13,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 48.15,
+            "tx_clique": 0.0
+          }
+        },
+        "JUL": {
+          "leads": 10585,
+          "enviados": 43633,
+          "entregues": 37615,
+          "tx_entrega": 86.21,
+          "conv_total": 5,
+          "conv_direta": 5,
+          "conv_assist": 0,
+          "tx_conv": 0.05,
+          "receita": 1070.0,
+          "email": {
+            "enviados": 15671,
+            "entregues": 14965,
+            "opens": 3613,
+            "clicks": 143,
+            "conv": 5,
+            "tx_entrega": 95.49,
+            "tx_abertura": 24.14,
+            "tx_clique": 0.91,
+            "ctor": 3.96
+          },
+          "whatsapp": {
+            "enviados": 148,
+            "entregues": 92,
+            "opens": 54,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 62.16,
+            "tx_abertura": 58.7,
+            "tx_clique": 1.35,
+            "ctor": 3.7
+          },
+          "sms": {
+            "enviados": 26907,
+            "entregues": 22397,
+            "clicks": 82,
+            "conv": 0,
+            "tx_entrega": 83.24,
+            "tx_clique": 0.3
+          },
+          "webpush": {
+            "enviados": 937,
+            "entregues": 255,
+            "clicks": 4,
+            "conv": 0,
+            "tx_entrega": 27.21,
+            "tx_clique": 0.43
+          }
+        },
+        "AGO": {
+          "leads": 5065,
+          "enviados": 35693,
+          "entregues": 31584,
+          "tx_entrega": 88.49,
+          "conv_total": 2,
+          "conv_direta": 2,
+          "conv_assist": 0,
+          "tx_conv": 0.04,
+          "receita": 428.0,
+          "email": {
+            "enviados": 14396,
+            "entregues": 13816,
+            "opens": 3398,
+            "clicks": 111,
+            "conv": 1,
+            "tx_entrega": 95.97,
+            "tx_abertura": 24.59,
+            "tx_clique": 0.77,
+            "ctor": 3.27
+          },
+          "whatsapp": {
+            "enviados": 77,
+            "entregues": 54,
+            "opens": 41,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 70.13,
+            "tx_abertura": 75.93,
+            "tx_clique": 2.6,
+            "ctor": 4.88
+          },
+          "sms": {
+            "enviados": 20421,
+            "entregues": 17436,
+            "clicks": 65,
+            "conv": 1,
+            "tx_entrega": 85.38,
+            "tx_clique": 0.32
+          },
+          "webpush": {
+            "enviados": 806,
+            "entregues": 278,
+            "clicks": 4,
+            "conv": 0,
+            "tx_entrega": 34.49,
+            "tx_clique": 0.5
+          }
+        },
+        "SET": {
+          "leads": 172,
+          "enviados": 864,
+          "entregues": 767,
+          "tx_entrega": 88.77,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 358,
+            "entregues": 337,
+            "opens": 93,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 94.13,
+            "tx_abertura": 27.6,
+            "tx_clique": 1.4,
+            "ctor": 5.38
+          },
+          "whatsapp": {
+            "enviados": 6,
+            "entregues": 5,
+            "opens": 1,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 83.33,
+            "tx_abertura": 20.0,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "sms": {
+            "enviados": 473,
+            "entregues": 412,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 87.1,
+            "tx_clique": 1.06
+          },
+          "webpush": {
+            "enviados": 27,
+            "entregues": 13,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 48.15,
+            "tx_clique": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "3554",
+      "nome_completo": "anhanguerabr_3554_tec",
+      "nome_curto": "Régua SMS TEC",
+      "canais": [
+        "SMS"
+      ],
+      "status": "completo",
+      "obs": "",
+      "periodos": {
+        "Q1": {
+          "leads": 1354,
+          "enviados": 65,
+          "entregues": 54,
+          "tx_entrega": 83.08,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": null,
+          "whatsapp": null,
+          "sms": {
+            "enviados": 65,
+            "entregues": 54,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 83.08,
+            "tx_clique": 1.54
+          },
+          "webpush": null
+        },
+        "Q2": {
+          "leads": 1547,
+          "enviados": 77,
+          "entregues": 65,
+          "tx_entrega": 84.42,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": null,
+          "whatsapp": null,
+          "sms": {
+            "enviados": 77,
+            "entregues": 65,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 84.42,
+            "tx_clique": 1.3
+          },
+          "webpush": null
+        },
+        "Q3": {
+          "leads": 8842,
+          "enviados": 272,
+          "entregues": 219,
+          "tx_entrega": 80.51,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": null,
+          "whatsapp": null,
+          "sms": {
+            "enviados": 272,
+            "entregues": 219,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 80.51,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "Q4": {
+          "leads": 4226,
+          "enviados": 304,
+          "entregues": 250,
+          "tx_entrega": 82.24,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": null,
+          "whatsapp": null,
+          "sms": {
+            "enviados": 304,
+            "entregues": 250,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 82.24,
+            "tx_clique": 0.33
+          },
+          "webpush": null
+        },
+        "Q5": {
+          "leads": 280,
+          "enviados": 18,
+          "entregues": 17,
+          "tx_entrega": 94.44,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": null,
+          "whatsapp": null,
+          "sms": {
+            "enviados": 18,
+            "entregues": 17,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 94.44,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "JUL": {
+          "leads": 2901,
+          "enviados": 142,
+          "entregues": 119,
+          "tx_entrega": 83.8,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": null,
+          "whatsapp": null,
+          "sms": {
+            "enviados": 142,
+            "entregues": 119,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 83.8,
+            "tx_clique": 1.41
+          },
+          "webpush": null
+        },
+        "AGO": {
+          "leads": 13068,
+          "enviados": 576,
+          "entregues": 469,
+          "tx_entrega": 81.42,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": null,
+          "whatsapp": null,
+          "sms": {
+            "enviados": 576,
+            "entregues": 469,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 81.42,
+            "tx_clique": 0.17
+          },
+          "webpush": null
+        },
+        "SET": {
+          "leads": 280,
+          "enviados": 18,
+          "entregues": 17,
+          "tx_entrega": 94.44,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": null,
+          "whatsapp": null,
+          "sms": {
+            "enviados": 18,
+            "entregues": 17,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 94.44,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        }
+      }
+    },
+    {
+      "id": "3878",
+      "nome_completo": "anhanguerabr_3878_tec",
+      "nome_curto": "Régua 3878 TEC",
+      "canais": [
+        "Email",
+        "WhatsApp",
+        "SMS",
+        "Web Push"
+      ],
+      "status": "completo",
+      "obs": "",
+      "periodos": {
+        "Q1": {
+          "leads": 381,
+          "enviados": 1532,
+          "entregues": 1333,
+          "tx_entrega": 87.01,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 569,
+            "entregues": 543,
+            "opens": 100,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.43,
+            "tx_abertura": 18.42,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 2,
+            "entregues": 1,
+            "opens": 0,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 50.0,
+            "tx_abertura": 0.0,
+            "tx_clique": 0.0,
+            "ctor": null
+          },
+          "sms": {
+            "enviados": 845,
+            "entregues": 745,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 88.17,
+            "tx_clique": 0.24
+          },
+          "webpush": {
+            "enviados": 116,
+            "entregues": 44,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 37.93,
+            "tx_clique": 0.0
+          }
+        },
+        "Q2": {
+          "leads": 681,
+          "enviados": 2913,
+          "entregues": 2546,
+          "tx_entrega": 87.4,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 1068,
+            "entregues": 1031,
+            "opens": 209,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 96.54,
+            "tx_abertura": 20.27,
+            "tx_clique": 0.56,
+            "ctor": 2.87
+          },
+          "whatsapp": {
+            "enviados": 9,
+            "entregues": 6,
+            "opens": 4,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 66.67,
+            "tx_abertura": 66.67,
+            "tx_clique": 11.11,
+            "ctor": 25.0
+          },
+          "sms": {
+            "enviados": 1619,
+            "entregues": 1416,
+            "clicks": 4,
+            "conv": 0,
+            "tx_entrega": 87.46,
+            "tx_clique": 0.25
+          },
+          "webpush": {
+            "enviados": 217,
+            "entregues": 93,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 42.86,
+            "tx_clique": 0.0
+          }
+        },
+        "Q3": {
+          "leads": 775,
+          "enviados": 3431,
+          "entregues": 3034,
+          "tx_entrega": 88.43,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 1287,
+            "entregues": 1239,
+            "opens": 298,
+            "clicks": 17,
+            "conv": 0,
+            "tx_entrega": 96.27,
+            "tx_abertura": 24.05,
+            "tx_clique": 1.32,
+            "ctor": 5.7
+          },
+          "whatsapp": {
+            "enviados": 5,
+            "entregues": 3,
+            "opens": 2,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 60.0,
+            "tx_abertura": 66.67,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "sms": {
+            "enviados": 1947,
+            "entregues": 1690,
+            "clicks": 4,
+            "conv": 0,
+            "tx_entrega": 86.8,
+            "tx_clique": 0.21
+          },
+          "webpush": {
+            "enviados": 192,
+            "entregues": 102,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 53.12,
+            "tx_clique": 1.04
+          }
+        },
+        "Q4": {
+          "leads": 909,
+          "enviados": 4416,
+          "entregues": 3915,
+          "tx_entrega": 88.65,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 1671,
+            "entregues": 1608,
+            "opens": 419,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 96.23,
+            "tx_abertura": 26.06,
+            "tx_clique": 0.36,
+            "ctor": 1.43
+          },
+          "whatsapp": {
+            "enviados": 9,
+            "entregues": 9,
+            "opens": 4,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 100.0,
+            "tx_abertura": 44.44,
+            "tx_clique": 11.11,
+            "ctor": 25.0
+          },
+          "sms": {
+            "enviados": 2481,
+            "entregues": 2188,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 88.19,
+            "tx_clique": 0.24
+          },
+          "webpush": {
+            "enviados": 255,
+            "entregues": 110,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 43.14,
+            "tx_clique": 0.39
+          }
+        },
+        "Q5": {
+          "leads": 80,
+          "enviados": 379,
+          "entregues": 335,
+          "tx_entrega": 88.39,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 145,
+            "entregues": 136,
+            "opens": 37,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 93.79,
+            "tx_abertura": 27.21,
+            "tx_clique": 1.38,
+            "ctor": 5.41
+          },
+          "whatsapp": {
+            "enviados": 1,
+            "entregues": 1,
+            "opens": 0,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 100.0,
+            "tx_abertura": 0.0,
+            "tx_clique": 100.0,
+            "ctor": null
+          },
+          "sms": {
+            "enviados": 211,
+            "entregues": 185,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 87.68,
+            "tx_clique": 0.0
+          },
+          "webpush": {
+            "enviados": 22,
+            "entregues": 13,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 59.09,
+            "tx_clique": 0.0
+          }
+        },
+        "JUL": {
+          "leads": 1062,
+          "enviados": 4445,
+          "entregues": 3879,
+          "tx_entrega": 87.27,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 1637,
+            "entregues": 1574,
+            "opens": 309,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 96.15,
+            "tx_abertura": 19.63,
+            "tx_clique": 0.37,
+            "ctor": 1.94
+          },
+          "whatsapp": {
+            "enviados": 11,
+            "entregues": 7,
+            "opens": 4,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 63.64,
+            "tx_abertura": 57.14,
+            "tx_clique": 9.09,
+            "ctor": 25.0
+          },
+          "sms": {
+            "enviados": 2464,
+            "entregues": 2161,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 87.7,
+            "tx_clique": 0.24
+          },
+          "webpush": {
+            "enviados": 333,
+            "entregues": 137,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 41.14,
+            "tx_clique": 0.0
+          }
+        },
+        "AGO": {
+          "leads": 1684,
+          "enviados": 7847,
+          "entregues": 6949,
+          "tx_entrega": 88.56,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 2958,
+            "entregues": 2847,
+            "opens": 717,
+            "clicks": 23,
+            "conv": 0,
+            "tx_entrega": 96.25,
+            "tx_abertura": 25.18,
+            "tx_clique": 0.78,
+            "ctor": 3.21
+          },
+          "whatsapp": {
+            "enviados": 14,
+            "entregues": 12,
+            "opens": 6,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 85.71,
+            "tx_abertura": 50.0,
+            "tx_clique": 7.14,
+            "ctor": 16.67
+          },
+          "sms": {
+            "enviados": 4428,
+            "entregues": 3878,
+            "clicks": 10,
+            "conv": 0,
+            "tx_entrega": 87.58,
+            "tx_clique": 0.23
+          },
+          "webpush": {
+            "enviados": 447,
+            "entregues": 212,
+            "clicks": 3,
+            "conv": 0,
+            "tx_entrega": 47.43,
+            "tx_clique": 0.67
+          }
+        },
+        "SET": {
+          "leads": 80,
+          "enviados": 379,
+          "entregues": 335,
+          "tx_entrega": 88.39,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 145,
+            "entregues": 136,
+            "opens": 37,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 93.79,
+            "tx_abertura": 27.21,
+            "tx_clique": 1.38,
+            "ctor": 5.41
+          },
+          "whatsapp": {
+            "enviados": 1,
+            "entregues": 1,
+            "opens": 0,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 100.0,
+            "tx_abertura": 0.0,
+            "tx_clique": 100.0,
+            "ctor": null
+          },
+          "sms": {
+            "enviados": 211,
+            "entregues": 185,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 87.68,
+            "tx_clique": 0.0
+          },
+          "webpush": {
+            "enviados": 22,
+            "entregues": 13,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 59.09,
+            "tx_clique": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "3900",
+      "nome_completo": "anhanguerabr_3900_tec",
+      "nome_curto": "Régua 3900 TEC",
+      "canais": [
+        "Email",
+        "WhatsApp"
+      ],
+      "status": "completo",
+      "obs": "",
+      "periodos": {
+        "Q1": {
+          "leads": 664,
+          "enviados": 1810,
+          "entregues": 1654,
+          "tx_entrega": 91.38,
+          "conv_total": 10,
+          "conv_direta": 10,
+          "conv_assist": 0,
+          "tx_conv": 1.51,
+          "receita": 2140.0,
+          "email": {
+            "enviados": 866,
+            "entregues": 844,
+            "opens": 130,
+            "clicks": 10,
+            "conv": 1,
+            "tx_entrega": 97.46,
+            "tx_abertura": 15.4,
+            "tx_clique": 1.15,
+            "ctor": 7.69
+          },
+          "whatsapp": {
+            "enviados": 944,
+            "entregues": 810,
+            "opens": 459,
+            "clicks": 96,
+            "conv": 9,
+            "tx_entrega": 85.81,
+            "tx_abertura": 56.67,
+            "tx_clique": 10.17,
+            "ctor": 20.92
+          },
+          "sms": null,
+          "webpush": null
+        },
+        "Q2": {
+          "leads": 1127,
+          "enviados": 3219,
+          "entregues": 2919,
+          "tx_entrega": 90.68,
+          "conv_total": 14,
+          "conv_direta": 14,
+          "conv_assist": 0,
+          "tx_conv": 1.24,
+          "receita": 2996.0,
+          "email": {
+            "enviados": 1523,
+            "entregues": 1477,
+            "opens": 213,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 96.98,
+            "tx_abertura": 14.42,
+            "tx_clique": 0.39,
+            "ctor": 2.82
+          },
+          "whatsapp": {
+            "enviados": 1696,
+            "entregues": 1442,
+            "opens": 836,
+            "clicks": 129,
+            "conv": 14,
+            "tx_entrega": 85.02,
+            "tx_abertura": 57.98,
+            "tx_clique": 7.61,
+            "ctor": 15.43
+          },
+          "sms": null,
+          "webpush": null
+        },
+        "Q3": {
+          "leads": 1152,
+          "enviados": 3450,
+          "entregues": 3151,
+          "tx_entrega": 91.33,
+          "conv_total": 12,
+          "conv_direta": 12,
+          "conv_assist": 0,
+          "tx_conv": 1.04,
+          "receita": 2568.0,
+          "email": {
+            "enviados": 1696,
+            "entregues": 1640,
+            "opens": 290,
+            "clicks": 4,
+            "conv": 1,
+            "tx_entrega": 96.7,
+            "tx_abertura": 17.68,
+            "tx_clique": 0.24,
+            "ctor": 1.38
+          },
+          "whatsapp": {
+            "enviados": 1754,
+            "entregues": 1511,
+            "opens": 897,
+            "clicks": 144,
+            "conv": 11,
+            "tx_entrega": 86.15,
+            "tx_abertura": 59.36,
+            "tx_clique": 8.21,
+            "ctor": 16.05
+          },
+          "sms": null,
+          "webpush": null
+        },
+        "Q4": {
+          "leads": 1622,
+          "enviados": 5236,
+          "entregues": 4773,
+          "tx_entrega": 91.16,
+          "conv_total": 18,
+          "conv_direta": 18,
+          "conv_assist": 0,
+          "tx_conv": 1.11,
+          "receita": 3852.0,
+          "email": {
+            "enviados": 2594,
+            "entregues": 2499,
+            "opens": 426,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 96.34,
+            "tx_abertura": 17.05,
+            "tx_clique": 0.19,
+            "ctor": 1.17
+          },
+          "whatsapp": {
+            "enviados": 2642,
+            "entregues": 2274,
+            "opens": 1378,
+            "clicks": 220,
+            "conv": 18,
+            "tx_entrega": 86.07,
+            "tx_abertura": 60.6,
+            "tx_clique": 8.33,
+            "ctor": 15.97
+          },
+          "sms": null,
+          "webpush": null
+        },
+        "Q5": {
+          "leads": 152,
+          "enviados": 390,
+          "entregues": 359,
+          "tx_entrega": 92.05,
+          "conv_total": 1,
+          "conv_direta": 1,
+          "conv_assist": 0,
+          "tx_conv": 0.66,
+          "receita": 214.0,
+          "email": {
+            "enviados": 187,
+            "entregues": 181,
+            "opens": 43,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 96.79,
+            "tx_abertura": 23.76,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 203,
+            "entregues": 178,
+            "opens": 109,
+            "clicks": 15,
+            "conv": 1,
+            "tx_entrega": 87.68,
+            "tx_abertura": 61.24,
+            "tx_clique": 7.39,
+            "ctor": 13.76
+          },
+          "sms": null,
+          "webpush": null
+        },
+        "JUL": {
+          "leads": 1791,
+          "enviados": 5029,
+          "entregues": 4573,
+          "tx_entrega": 90.93,
+          "conv_total": 24,
+          "conv_direta": 24,
+          "conv_assist": 0,
+          "tx_conv": 1.34,
+          "receita": 5136.0,
+          "email": {
+            "enviados": 2389,
+            "entregues": 2321,
+            "opens": 343,
+            "clicks": 16,
+            "conv": 1,
+            "tx_entrega": 97.15,
+            "tx_abertura": 14.78,
+            "tx_clique": 0.67,
+            "ctor": 4.66
+          },
+          "whatsapp": {
+            "enviados": 2640,
+            "entregues": 2252,
+            "opens": 1295,
+            "clicks": 225,
+            "conv": 23,
+            "tx_entrega": 85.3,
+            "tx_abertura": 57.5,
+            "tx_clique": 8.52,
+            "ctor": 17.37
+          },
+          "sms": null,
+          "webpush": null
+        },
+        "AGO": {
+          "leads": 2774,
+          "enviados": 8686,
+          "entregues": 7924,
+          "tx_entrega": 91.23,
+          "conv_total": 30,
+          "conv_direta": 30,
+          "conv_assist": 0,
+          "tx_conv": 1.08,
+          "receita": 6420.0,
+          "email": {
+            "enviados": 4290,
+            "entregues": 4139,
+            "opens": 716,
+            "clicks": 9,
+            "conv": 1,
+            "tx_entrega": 96.48,
+            "tx_abertura": 17.3,
+            "tx_clique": 0.21,
+            "ctor": 1.26
+          },
+          "whatsapp": {
+            "enviados": 4396,
+            "entregues": 3785,
+            "opens": 2275,
+            "clicks": 364,
+            "conv": 29,
+            "tx_entrega": 86.1,
+            "tx_abertura": 60.11,
+            "tx_clique": 8.28,
+            "ctor": 16.0
+          },
+          "sms": null,
+          "webpush": null
+        },
+        "SET": {
+          "leads": 152,
+          "enviados": 390,
+          "entregues": 359,
+          "tx_entrega": 92.05,
+          "conv_total": 1,
+          "conv_direta": 1,
+          "conv_assist": 0,
+          "tx_conv": 0.66,
+          "receita": 214.0,
+          "email": {
+            "enviados": 187,
+            "entregues": 181,
+            "opens": 43,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 96.79,
+            "tx_abertura": 23.76,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 203,
+            "entregues": 178,
+            "opens": 109,
+            "clicks": 15,
+            "conv": 1,
+            "tx_entrega": 87.68,
+            "tx_abertura": 61.24,
+            "tx_clique": 7.39,
+            "ctor": 13.76
+          },
+          "sms": null,
+          "webpush": null
+        }
+      }
+    },
+    {
+      "id": "3901",
+      "nome_completo": "anhanguerabr_3901_tec",
+      "nome_curto": "Régua 3901 TEC",
+      "canais": [
+        "Email",
+        "WhatsApp",
+        "SMS"
+      ],
+      "status": "completo",
+      "obs": "",
+      "periodos": {
+        "Q1": {
+          "leads": 266,
+          "enviados": 1203,
+          "entregues": 1090,
+          "tx_entrega": 90.61,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 691,
+            "entregues": 663,
+            "opens": 115,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 95.95,
+            "tx_abertura": 17.35,
+            "tx_clique": 0.14,
+            "ctor": 0.87
+          },
+          "whatsapp": {
+            "enviados": 177,
+            "entregues": 131,
+            "opens": 61,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 74.01,
+            "tx_abertura": 46.56,
+            "tx_clique": 3.39,
+            "ctor": 9.84
+          },
+          "sms": {
+            "enviados": 335,
+            "entregues": 296,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 88.36,
+            "tx_clique": 0.3
+          },
+          "webpush": null
+        },
+        "Q2": {
+          "leads": 406,
+          "enviados": 1676,
+          "entregues": 1519,
+          "tx_entrega": 90.63,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 1020,
+            "entregues": 974,
+            "opens": 107,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.49,
+            "tx_abertura": 10.99,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 202,
+            "entregues": 156,
+            "opens": 64,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 77.23,
+            "tx_abertura": 41.03,
+            "tx_clique": 2.48,
+            "ctor": 7.81
+          },
+          "sms": {
+            "enviados": 454,
+            "entregues": 389,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 85.68,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "Q3": {
+          "leads": 534,
+          "enviados": 3782,
+          "entregues": 3412,
+          "tx_entrega": 90.22,
+          "conv_total": 5,
+          "conv_direta": 5,
+          "conv_assist": 0,
+          "tx_conv": 0.94,
+          "receita": 1070.0,
+          "email": {
+            "enviados": 2283,
+            "entregues": 2195,
+            "opens": 264,
+            "clicks": 5,
+            "conv": 1,
+            "tx_entrega": 96.15,
+            "tx_abertura": 12.03,
+            "tx_clique": 0.22,
+            "ctor": 1.89
+          },
+          "whatsapp": {
+            "enviados": 484,
+            "entregues": 336,
+            "opens": 139,
+            "clicks": 12,
+            "conv": 4,
+            "tx_entrega": 69.42,
+            "tx_abertura": 41.37,
+            "tx_clique": 2.48,
+            "ctor": 8.63
+          },
+          "sms": {
+            "enviados": 1015,
+            "entregues": 881,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 86.8,
+            "tx_clique": 0.1
+          },
+          "webpush": null
+        },
+        "Q4": {
+          "leads": 844,
+          "enviados": 4419,
+          "entregues": 4029,
+          "tx_entrega": 91.17,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 2699,
+            "entregues": 2598,
+            "opens": 360,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 96.26,
+            "tx_abertura": 13.86,
+            "tx_clique": 0.22,
+            "ctor": 1.67
+          },
+          "whatsapp": {
+            "enviados": 504,
+            "entregues": 361,
+            "opens": 139,
+            "clicks": 7,
+            "conv": 0,
+            "tx_entrega": 71.63,
+            "tx_abertura": 38.5,
+            "tx_clique": 1.39,
+            "ctor": 5.04
+          },
+          "sms": {
+            "enviados": 1216,
+            "entregues": 1070,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 87.99,
+            "tx_clique": 0.08
+          },
+          "webpush": null
+        },
+        "Q5": {
+          "leads": 105,
+          "enviados": 718,
+          "entregues": 646,
+          "tx_entrega": 89.97,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 411,
+            "entregues": 393,
+            "opens": 63,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.62,
+            "tx_abertura": 16.03,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 119,
+            "entregues": 87,
+            "opens": 42,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 73.11,
+            "tx_abertura": 48.28,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "sms": {
+            "enviados": 188,
+            "entregues": 166,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 88.3,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "JUL": {
+          "leads": 672,
+          "enviados": 2879,
+          "entregues": 2609,
+          "tx_entrega": 90.62,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 1711,
+            "entregues": 1637,
+            "opens": 222,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 95.68,
+            "tx_abertura": 13.56,
+            "tx_clique": 0.06,
+            "ctor": 0.45
+          },
+          "whatsapp": {
+            "enviados": 379,
+            "entregues": 287,
+            "opens": 125,
+            "clicks": 11,
+            "conv": 0,
+            "tx_entrega": 75.73,
+            "tx_abertura": 43.55,
+            "tx_clique": 2.9,
+            "ctor": 8.8
+          },
+          "sms": {
+            "enviados": 789,
+            "entregues": 685,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 86.82,
+            "tx_clique": 0.13
+          },
+          "webpush": null
+        },
+        "AGO": {
+          "leads": 1378,
+          "enviados": 8201,
+          "entregues": 7441,
+          "tx_entrega": 90.73,
+          "conv_total": 5,
+          "conv_direta": 5,
+          "conv_assist": 0,
+          "tx_conv": 0.36,
+          "receita": 1070.0,
+          "email": {
+            "enviados": 4982,
+            "entregues": 4793,
+            "opens": 624,
+            "clicks": 11,
+            "conv": 1,
+            "tx_entrega": 96.21,
+            "tx_abertura": 13.02,
+            "tx_clique": 0.22,
+            "ctor": 1.76
+          },
+          "whatsapp": {
+            "enviados": 988,
+            "entregues": 697,
+            "opens": 278,
+            "clicks": 19,
+            "conv": 4,
+            "tx_entrega": 70.55,
+            "tx_abertura": 39.89,
+            "tx_clique": 1.92,
+            "ctor": 6.83
+          },
+          "sms": {
+            "enviados": 2231,
+            "entregues": 1951,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 87.45,
+            "tx_clique": 0.09
+          },
+          "webpush": null
+        },
+        "SET": {
+          "leads": 105,
+          "enviados": 718,
+          "entregues": 646,
+          "tx_entrega": 89.97,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 411,
+            "entregues": 393,
+            "opens": 63,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.62,
+            "tx_abertura": 16.03,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 119,
+            "entregues": 87,
+            "opens": 42,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 73.11,
+            "tx_abertura": 48.28,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "sms": {
+            "enviados": 188,
+            "entregues": 166,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 88.3,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        }
+      }
+    },
+    {
+      "id": "3935",
+      "nome_completo": "anhanguerabr_3935_tec",
+      "nome_curto": "Régua 3935 TEC",
+      "canais": [
+        "Email",
+        "WhatsApp",
+        "SMS"
+      ],
+      "status": "completo",
+      "obs": "",
+      "periodos": {
+        "Q1": {
+          "leads": 1412,
+          "enviados": 6327,
+          "entregues": 5555,
+          "tx_entrega": 87.8,
+          "conv_total": 2,
+          "conv_direta": 2,
+          "conv_assist": 0,
+          "tx_conv": 0.14,
+          "receita": 428.0,
+          "email": {
+            "enviados": 3451,
+            "entregues": 3318,
+            "opens": 396,
+            "clicks": 3,
+            "conv": 0,
+            "tx_entrega": 96.15,
+            "tx_abertura": 11.93,
+            "tx_clique": 0.09,
+            "ctor": 0.76
+          },
+          "whatsapp": {
+            "enviados": 1911,
+            "entregues": 1407,
+            "opens": 710,
+            "clicks": 46,
+            "conv": 2,
+            "tx_entrega": 73.63,
+            "tx_abertura": 50.46,
+            "tx_clique": 2.41,
+            "ctor": 6.48
+          },
+          "sms": {
+            "enviados": 965,
+            "entregues": 830,
+            "clicks": 2,
+            "conv": 0,
+            "tx_entrega": 86.01,
+            "tx_clique": 0.21
+          },
+          "webpush": null
+        },
+        "Q2": {
+          "leads": 1821,
+          "enviados": 8733,
+          "entregues": 7601,
+          "tx_entrega": 87.04,
+          "conv_total": 2,
+          "conv_direta": 2,
+          "conv_assist": 0,
+          "tx_conv": 0.11,
+          "receita": 428.0,
+          "email": {
+            "enviados": 4513,
+            "entregues": 4337,
+            "opens": 488,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 96.1,
+            "tx_abertura": 11.25,
+            "tx_clique": 0.13,
+            "ctor": 1.23
+          },
+          "whatsapp": {
+            "enviados": 2761,
+            "entregues": 1994,
+            "opens": 941,
+            "clicks": 76,
+            "conv": 2,
+            "tx_entrega": 72.22,
+            "tx_abertura": 47.19,
+            "tx_clique": 2.75,
+            "ctor": 8.08
+          },
+          "sms": {
+            "enviados": 1459,
+            "entregues": 1270,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 87.05,
+            "tx_clique": 0.41
+          },
+          "webpush": null
+        },
+        "Q3": {
+          "leads": 9154,
+          "enviados": 46070,
+          "entregues": 38920,
+          "tx_entrega": 84.48,
+          "conv_total": 9,
+          "conv_direta": 9,
+          "conv_assist": 0,
+          "tx_conv": 0.1,
+          "receita": 1926.0,
+          "email": {
+            "enviados": 24600,
+            "entregues": 23400,
+            "opens": 2549,
+            "clicks": 12,
+            "conv": 0,
+            "tx_entrega": 95.12,
+            "tx_abertura": 10.89,
+            "tx_clique": 0.05,
+            "ctor": 0.47
+          },
+          "whatsapp": {
+            "enviados": 14200,
+            "entregues": 9507,
+            "opens": 4440,
+            "clicks": 190,
+            "conv": 9,
+            "tx_entrega": 66.95,
+            "tx_abertura": 46.7,
+            "tx_clique": 1.34,
+            "ctor": 4.28
+          },
+          "sms": {
+            "enviados": 7274,
+            "entregues": 6046,
+            "clicks": 14,
+            "conv": 0,
+            "tx_entrega": 83.12,
+            "tx_clique": 0.19
+          },
+          "webpush": null
+        },
+        "Q4": {
+          "leads": 2066,
+          "enviados": 11396,
+          "entregues": 10082,
+          "tx_entrega": 88.47,
+          "conv_total": 5,
+          "conv_direta": 5,
+          "conv_assist": 0,
+          "tx_conv": 0.24,
+          "receita": 1070.0,
+          "email": {
+            "enviados": 6176,
+            "entregues": 6001,
+            "opens": 909,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 97.17,
+            "tx_abertura": 15.15,
+            "tx_clique": 0.08,
+            "ctor": 0.55
+          },
+          "whatsapp": {
+            "enviados": 3445,
+            "entregues": 2538,
+            "opens": 1382,
+            "clicks": 78,
+            "conv": 5,
+            "tx_entrega": 73.67,
+            "tx_abertura": 54.45,
+            "tx_clique": 2.26,
+            "ctor": 5.64
+          },
+          "sms": {
+            "enviados": 1775,
+            "entregues": 1543,
+            "clicks": 5,
+            "conv": 0,
+            "tx_entrega": 86.93,
+            "tx_clique": 0.28
+          },
+          "webpush": null
+        },
+        "Q5": {
+          "leads": 155,
+          "enviados": 1027,
+          "entregues": 917,
+          "tx_entrega": 89.29,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 544,
+            "entregues": 518,
+            "opens": 76,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.22,
+            "tx_abertura": 14.67,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 269,
+            "entregues": 212,
+            "opens": 109,
+            "clicks": 11,
+            "conv": 0,
+            "tx_entrega": 78.81,
+            "tx_abertura": 51.42,
+            "tx_clique": 4.09,
+            "ctor": 10.09
+          },
+          "sms": {
+            "enviados": 214,
+            "entregues": 187,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 87.38,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "JUL": {
+          "leads": 3233,
+          "enviados": 15060,
+          "entregues": 13156,
+          "tx_entrega": 87.36,
+          "conv_total": 4,
+          "conv_direta": 4,
+          "conv_assist": 0,
+          "tx_conv": 0.12,
+          "receita": 856.0,
+          "email": {
+            "enviados": 7964,
+            "entregues": 7655,
+            "opens": 884,
+            "clicks": 9,
+            "conv": 0,
+            "tx_entrega": 96.12,
+            "tx_abertura": 11.55,
+            "tx_clique": 0.11,
+            "ctor": 1.02
+          },
+          "whatsapp": {
+            "enviados": 4672,
+            "entregues": 3401,
+            "opens": 1651,
+            "clicks": 122,
+            "conv": 4,
+            "tx_entrega": 72.8,
+            "tx_abertura": 48.54,
+            "tx_clique": 2.61,
+            "ctor": 7.39
+          },
+          "sms": {
+            "enviados": 2424,
+            "entregues": 2100,
+            "clicks": 8,
+            "conv": 0,
+            "tx_entrega": 86.63,
+            "tx_clique": 0.33
+          },
+          "webpush": null
+        },
+        "AGO": {
+          "leads": 11220,
+          "enviados": 57466,
+          "entregues": 49002,
+          "tx_entrega": 85.27,
+          "conv_total": 14,
+          "conv_direta": 14,
+          "conv_assist": 0,
+          "tx_conv": 0.12,
+          "receita": 2996.0,
+          "email": {
+            "enviados": 30776,
+            "entregues": 29401,
+            "opens": 3458,
+            "clicks": 17,
+            "conv": 0,
+            "tx_entrega": 95.53,
+            "tx_abertura": 11.76,
+            "tx_clique": 0.06,
+            "ctor": 0.49
+          },
+          "whatsapp": {
+            "enviados": 17645,
+            "entregues": 12045,
+            "opens": 5822,
+            "clicks": 268,
+            "conv": 14,
+            "tx_entrega": 68.26,
+            "tx_abertura": 48.34,
+            "tx_clique": 1.52,
+            "ctor": 4.6
+          },
+          "sms": {
+            "enviados": 9049,
+            "entregues": 7589,
+            "clicks": 19,
+            "conv": 0,
+            "tx_entrega": 83.87,
+            "tx_clique": 0.21
+          },
+          "webpush": null
+        },
+        "SET": {
+          "leads": 155,
+          "enviados": 1027,
+          "entregues": 917,
+          "tx_entrega": 89.29,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 544,
+            "entregues": 518,
+            "opens": 76,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.22,
+            "tx_abertura": 14.67,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 269,
+            "entregues": 212,
+            "opens": 109,
+            "clicks": 11,
+            "conv": 0,
+            "tx_entrega": 78.81,
+            "tx_abertura": 51.42,
+            "tx_clique": 4.09,
+            "ctor": 10.09
+          },
+          "sms": {
+            "enviados": 214,
+            "entregues": 187,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 87.38,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        }
+      }
+    },
+    {
+      "id": "3943",
+      "nome_completo": "anhanguerabr_3943_tec",
+      "nome_curto": "Régua 3943 TEC",
+      "canais": [
+        "Email",
+        "WhatsApp",
+        "SMS"
+      ],
+      "status": "completo",
+      "obs": "",
+      "periodos": {
+        "Q1": {
+          "leads": 327,
+          "enviados": 1132,
+          "entregues": 980,
+          "tx_entrega": 86.57,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 630,
+            "entregues": 590,
+            "opens": 48,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 93.65,
+            "tx_abertura": 8.14,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 334,
+            "entregues": 240,
+            "opens": 115,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 71.86,
+            "tx_abertura": 47.92,
+            "tx_clique": 1.8,
+            "ctor": 5.22
+          },
+          "sms": {
+            "enviados": 168,
+            "entregues": 150,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 89.29,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "Q2": {
+          "leads": 568,
+          "enviados": 2217,
+          "entregues": 1929,
+          "tx_entrega": 87.01,
+          "conv_total": 1,
+          "conv_direta": 1,
+          "conv_assist": 0,
+          "tx_conv": 0.18,
+          "receita": 214.0,
+          "email": {
+            "enviados": 1223,
+            "entregues": 1184,
+            "opens": 117,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 96.81,
+            "tx_abertura": 9.88,
+            "tx_clique": 0.08,
+            "ctor": 0.85
+          },
+          "whatsapp": {
+            "enviados": 658,
+            "entregues": 450,
+            "opens": 198,
+            "clicks": 13,
+            "conv": 1,
+            "tx_entrega": 68.39,
+            "tx_abertura": 44.0,
+            "tx_clique": 1.98,
+            "ctor": 6.57
+          },
+          "sms": {
+            "enviados": 336,
+            "entregues": 295,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 87.8,
+            "tx_clique": 0.3
+          },
+          "webpush": null
+        },
+        "Q3": {
+          "leads": 767,
+          "enviados": 2982,
+          "entregues": 2561,
+          "tx_entrega": 85.88,
+          "conv_total": 3,
+          "conv_direta": 3,
+          "conv_assist": 0,
+          "tx_conv": 0.39,
+          "receita": 642.0,
+          "email": {
+            "enviados": 1640,
+            "entregues": 1573,
+            "opens": 185,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.91,
+            "tx_abertura": 11.76,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 892,
+            "entregues": 587,
+            "opens": 304,
+            "clicks": 12,
+            "conv": 3,
+            "tx_entrega": 65.81,
+            "tx_abertura": 51.79,
+            "tx_clique": 1.35,
+            "ctor": 3.95
+          },
+          "sms": {
+            "enviados": 450,
+            "entregues": 401,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 89.11,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "Q4": {
+          "leads": 985,
+          "enviados": 4275,
+          "entregues": 3740,
+          "tx_entrega": 87.49,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 2356,
+            "entregues": 2265,
+            "opens": 291,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 96.14,
+            "tx_abertura": 12.85,
+            "tx_clique": 0.04,
+            "ctor": 0.34
+          },
+          "whatsapp": {
+            "enviados": 1266,
+            "entregues": 908,
+            "opens": 441,
+            "clicks": 22,
+            "conv": 0,
+            "tx_entrega": 71.72,
+            "tx_abertura": 48.57,
+            "tx_clique": 1.74,
+            "ctor": 4.99
+          },
+          "sms": {
+            "enviados": 653,
+            "entregues": 567,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 86.83,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "Q5": {
+          "leads": 68,
+          "enviados": 438,
+          "entregues": 386,
+          "tx_entrega": 88.13,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 243,
+            "entregues": 232,
+            "opens": 31,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.47,
+            "tx_abertura": 13.36,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 118,
+            "entregues": 86,
+            "opens": 44,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 72.88,
+            "tx_abertura": 51.16,
+            "tx_clique": 0.85,
+            "ctor": 2.27
+          },
+          "sms": {
+            "enviados": 77,
+            "entregues": 68,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 88.31,
+            "tx_clique": 1.3
+          },
+          "webpush": null
+        },
+        "JUL": {
+          "leads": 895,
+          "enviados": 3349,
+          "entregues": 2909,
+          "tx_entrega": 86.86,
+          "conv_total": 1,
+          "conv_direta": 1,
+          "conv_assist": 0,
+          "tx_conv": 0.11,
+          "receita": 214.0,
+          "email": {
+            "enviados": 1853,
+            "entregues": 1774,
+            "opens": 165,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 95.74,
+            "tx_abertura": 9.3,
+            "tx_clique": 0.05,
+            "ctor": 0.61
+          },
+          "whatsapp": {
+            "enviados": 992,
+            "entregues": 690,
+            "opens": 313,
+            "clicks": 19,
+            "conv": 1,
+            "tx_entrega": 69.56,
+            "tx_abertura": 45.36,
+            "tx_clique": 1.92,
+            "ctor": 6.07
+          },
+          "sms": {
+            "enviados": 504,
+            "entregues": 445,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 88.29,
+            "tx_clique": 0.2
+          },
+          "webpush": null
+        },
+        "AGO": {
+          "leads": 1752,
+          "enviados": 7257,
+          "entregues": 6301,
+          "tx_entrega": 86.83,
+          "conv_total": 3,
+          "conv_direta": 3,
+          "conv_assist": 0,
+          "tx_conv": 0.17,
+          "receita": 642.0,
+          "email": {
+            "enviados": 3996,
+            "entregues": 3838,
+            "opens": 476,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 96.05,
+            "tx_abertura": 12.4,
+            "tx_clique": 0.03,
+            "ctor": 0.21
+          },
+          "whatsapp": {
+            "enviados": 2158,
+            "entregues": 1495,
+            "opens": 745,
+            "clicks": 34,
+            "conv": 3,
+            "tx_entrega": 69.28,
+            "tx_abertura": 49.83,
+            "tx_clique": 1.58,
+            "ctor": 4.56
+          },
+          "sms": {
+            "enviados": 1103,
+            "entregues": 968,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 87.76,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "SET": {
+          "leads": 68,
+          "enviados": 438,
+          "entregues": 386,
+          "tx_entrega": 88.13,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 243,
+            "entregues": 232,
+            "opens": 31,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 95.47,
+            "tx_abertura": 13.36,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 118,
+            "entregues": 86,
+            "opens": 44,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 72.88,
+            "tx_abertura": 51.16,
+            "tx_clique": 0.85,
+            "ctor": 2.27
+          },
+          "sms": {
+            "enviados": 77,
+            "entregues": 68,
+            "clicks": 1,
+            "conv": 0,
+            "tx_entrega": 88.31,
+            "tx_clique": 1.3
+          },
+          "webpush": null
+        }
+      }
+    },
+    {
+      "id": "3951",
+      "nome_completo": "anhanguerabr_3951_tec",
+      "nome_curto": "Régua 3951 TEC",
+      "canais": [
+        "Email",
+        "WhatsApp",
+        "SMS"
+      ],
+      "status": "parcial",
+      "obs": "Q2–Q5 pendentes de coleta",
+      "periodos": {
+        "Q1": {
+          "leads": 119,
+          "enviados": 450,
+          "entregues": 407,
+          "tx_entrega": 90.44,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 244,
+            "entregues": 237,
+            "opens": 30,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 97.13,
+            "tx_abertura": 12.66,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 100,
+            "entregues": 82,
+            "opens": 53,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 82.0,
+            "tx_abertura": 64.63,
+            "tx_clique": 6.0,
+            "ctor": 11.32
+          },
+          "sms": {
+            "enviados": 106,
+            "entregues": 88,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 83.02,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "Q2": null,
+        "Q3": null,
+        "Q4": null,
+        "Q5": null,
+        "JUL": {
+          "leads": 119,
+          "enviados": 450,
+          "entregues": 407,
+          "tx_entrega": 90.44,
+          "conv_total": 0,
+          "conv_direta": 0,
+          "conv_assist": 0,
+          "tx_conv": 0.0,
+          "receita": 0.0,
+          "email": {
+            "enviados": 244,
+            "entregues": 237,
+            "opens": 30,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 97.13,
+            "tx_abertura": 12.66,
+            "tx_clique": 0.0,
+            "ctor": 0.0
+          },
+          "whatsapp": {
+            "enviados": 100,
+            "entregues": 82,
+            "opens": 53,
+            "clicks": 6,
+            "conv": 0,
+            "tx_entrega": 82.0,
+            "tx_abertura": 64.63,
+            "tx_clique": 6.0,
+            "ctor": 11.32
+          },
+          "sms": {
+            "enviados": 106,
+            "entregues": 88,
+            "clicks": 0,
+            "conv": 0,
+            "tx_entrega": 83.02,
+            "tx_clique": 0.0
+          },
+          "webpush": null
+        },
+        "AGO": null,
+        "SET": null
+      }
+    }
+  ]
+}

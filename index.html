@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard CRM — Réguas TEC | Anhanguera</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --primary: #1e3a5f;
+    --accent:  #e63946;
+    --teal:    #0096b2;
+    --green:   #2a9d8f;
+    --amber:   #e9c46a;
+    --bg:      #f4f6fa;
+    --card-bg: #ffffff;
+    --border:  #dee2e8;
+    --text:    #1a2337;
+    --muted:   #6c757d;
+    --email-c: #4361ee;
+    --wa-c:    #25d366;
+    --sms-c:   #f4a261;
+    --wp-c:    #9b5de5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); }
+
+  /* Header */
+  .header { background: var(--primary); color: #fff; padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 1.25rem; font-weight: 700; letter-spacing: .02em; }
+  .header .sub { font-size: .8rem; opacity: .7; margin-top: 3px; }
+  .badge-parcial { background: var(--amber); color: #333; border-radius: 4px; font-size: .7rem; padding: 2px 8px; font-weight: 600; }
+
+  /* Layout */
+  .layout { display: flex; min-height: calc(100vh - 60px); }
+  .sidebar { width: 240px; min-width: 200px; background: #fff; border-right: 1px solid var(--border); padding: 16px 0; flex-shrink: 0; }
+  .main { flex: 1; padding: 24px 28px; overflow-x: auto; }
+
+  /* Sidebar */
+  .sidebar-section { padding: 8px 16px 4px; font-size: .7rem; font-weight: 700; text-transform: uppercase; color: var(--muted); letter-spacing: .08em; }
+  .sidebar-item { display: block; padding: 9px 16px; font-size: .85rem; cursor: pointer; transition: background .15s; border-left: 3px solid transparent; }
+  .sidebar-item:hover { background: var(--bg); }
+  .sidebar-item.active { background: #e8effe; border-left-color: var(--teal); color: var(--primary); font-weight: 600; }
+  .sidebar-item .badge { float: right; font-size: .7rem; background: var(--bg); border-radius: 10px; padding: 1px 7px; color: var(--muted); }
+  .sidebar-divider { height: 1px; background: var(--border); margin: 8px 0; }
+
+  /* Period tabs */
+  .period-bar { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .period-group { display: flex; gap: 4px; background: #fff; padding: 4px; border-radius: 8px; border: 1px solid var(--border); }
+  .period-btn { padding: 6px 14px; border-radius: 6px; border: none; cursor: pointer; font-size: .82rem; background: transparent; color: var(--muted); font-weight: 500; transition: all .15s; }
+  .period-btn:hover { background: var(--bg); color: var(--text); }
+  .period-btn.active { background: var(--primary); color: #fff; }
+  .period-group-label { font-size: .7rem; color: var(--muted); align-self: center; padding: 0 6px; font-weight: 600; }
+
+  /* KPI Cards */
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin-bottom: 22px; }
+  .kpi-card { background: var(--card-bg); border-radius: 10px; padding: 16px 18px; border: 1px solid var(--border); position: relative; overflow: hidden; }
+  .kpi-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--accent); }
+  .kpi-card.blue::before  { background: var(--teal); }
+  .kpi-card.green::before { background: var(--green); }
+  .kpi-card.amber::before { background: var(--amber); }
+  .kpi-card.purple::before { background: var(--wp-c); }
+  .kpi-label { font-size: .72rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+  .kpi-val { font-size: 1.6rem; font-weight: 700; line-height: 1; }
+  .kpi-sub { font-size: .75rem; color: var(--muted); margin-top: 4px; }
+
+  /* Section */
+  .section-title { font-size: .85rem; font-weight: 700; color: var(--primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+  /* Tables */
+  .table-wrap { background: var(--card-bg); border-radius: 10px; border: 1px solid var(--border); overflow: hidden; margin-bottom: 22px; }
+  table { width: 100%; border-collapse: collapse; font-size: .83rem; }
+  thead th { background: #f8f9fc; padding: 10px 14px; text-align: left; font-weight: 700; font-size: .75rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); border-bottom: 1px solid var(--border); }
+  tbody td { padding: 10px 14px; border-bottom: 1px solid #f0f2f5; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: #f8fafc; }
+  .tag { display: inline-block; border-radius: 4px; padding: 2px 7px; font-size: .72rem; font-weight: 600; }
+  .tag-email { background: #dce9ff; color: var(--email-c); }
+  .tag-wa    { background: #d1f5e0; color: #1a7a40; }
+  .tag-sms   { background: #fef0e0; color: #b85c20; }
+  .tag-wp    { background: #ede0ff; color: #6b35b0; }
+
+  /* Charts */
+  .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 22px; }
+  .chart-card { background: var(--card-bg); border-radius: 10px; border: 1px solid var(--border); padding: 18px; }
+  .chart-card h4 { font-size: .8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 14px; }
+
+  /* Estado parcial */
+  .partial-notice { background: #fff8e1; border: 1px solid #f0c040; border-radius: 8px; padding: 10px 16px; font-size: .82rem; color: #795500; margin-bottom: 16px; }
+  .no-data { color: var(--muted); font-style: italic; font-size: .85rem; }
+
+  /* Responsivo básico */
+  @media (max-width: 768px) {
+    .layout { flex-direction: column; }
+    .sidebar { width: 100%; border-right: none; border-bottom: 1px solid var(--border); }
+    .charts-row { grid-template-columns: 1fr; }
+    .main { padding: 16px; }
+  }
+
+  .canal-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+  .pct-bar { height: 4px; background: var(--bg); border-radius: 2px; margin-top: 4px; }
+  .pct-fill { height: 100%; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>📊 Dashboard CRM — Réguas TEC</h1>
+    <div class="sub" id="header-meta">Anhanguera · Carregando dados…</div>
+  </div>
+  <div id="header-status"></div>
+</div>
+
+<div class="layout">
+  <!-- Sidebar: lista de réguas -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-section">Réguas</div>
+    <div id="regua-list"></div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="main">
+    <div class="period-bar">
+      <div class="period-group">
+        <span class="period-group-label">QUINZENAL</span>
+        <button class="period-btn" data-period="Q1">Q1 Jul</button>
+        <button class="period-btn" data-period="Q2">Q2 Jul</button>
+        <button class="period-btn" data-period="Q3">Q3 Ago</button>
+        <button class="period-btn" data-period="Q4">Q4 Ago</button>
+        <button class="period-btn" data-period="Q5">Q5 Set</button>
+      </div>
+      <div class="period-group">
+        <span class="period-group-label">MENSAL</span>
+        <button class="period-btn active" data-period="JUL">Julho</button>
+        <button class="period-btn" data-period="AGO">Agosto</button>
+        <button class="period-btn" data-period="SET">Set (parcial)</button>
+      </div>
+    </div>
+
+    <div id="content-area">
+      <p class="no-data">Selecione uma régua no menu lateral.</p>
+    </div>
+  </main>
+</div>
+
+<script>
+// ─── Estado global ───────────────────────────────────────────
+let DATA = null;
+let selectedRegua = null;
+let selectedPeriod = 'JUL';
+
+// ─── Formatadores ────────────────────────────────────────────
+const fmt = n => n == null ? '—' : n.toLocaleString('pt-BR');
+const fmtPct = n => n == null ? '—' : n.toFixed(2) + '%';
+const fmtR = n => n == null ? '—' : 'R$ ' + n.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+
+// ─── Carregar JSON ───────────────────────────────────────────
+async function loadData() {
+  try {
+    const r = await fetch('./data.json');
+    DATA = await r.json();
+    init();
+  } catch(e) {
+    document.getElementById('content-area').innerHTML =
+      `<p style="color:red">Erro ao carregar data.json: ${e.message}<br>Certifique-se de que index.html e data.json estão no mesmo diretório.</p>`;
+  }
+}
+
+function init() {
+  const meta = DATA.meta;
+  document.getElementById('header-meta').textContent =
+    `${meta.conta} · ${meta.segmento} · ${meta.total_reguas} réguas · Gerado em ${meta.gerado_em}`;
+  document.getElementById('header-status').innerHTML =
+    `<span class="badge-parcial">${meta.reguas_completas} completas / ${meta.reguas_parciais} parcial</span>`;
+  buildSidebar();
+  // Seleciona primeira régua
+  if (DATA.reguas.length) selectRegua(DATA.reguas[0].id);
+}
+
+function buildSidebar() {
+  const list = document.getElementById('regua-list');
+  list.innerHTML = '';
+  DATA.reguas.forEach(r => {
+    const el = document.createElement('div');
+    el.className = 'sidebar-item';
+    el.dataset.id = r.id;
+    el.innerHTML = `
+      <div style="font-weight:600;font-size:.82rem">${r.nome_curto}</div>
+      <div style="font-size:.7rem;color:var(--muted)">${r.id} · ${r.canais.slice(0,2).join(', ')}${r.canais.length > 2 ? '…' : ''}</div>
+      ${r.status === 'parcial' ? '<span class="badge-parcial" style="font-size:.65rem;margin-top:3px;display:inline-block">parcial</span>' : ''}
+    `;
+    el.onclick = () => selectRegua(r.id);
+    list.appendChild(el);
+  });
+}
+
+function selectRegua(id) {
+  selectedRegua = id;
+  document.querySelectorAll('.sidebar-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.id === id);
+  });
+  render();
+}
+
+// ─── Period buttons ──────────────────────────────────────────
+document.querySelectorAll('.period-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.period-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedPeriod = btn.dataset.period;
+    render();
+  });
+});
+
+// ─── Render principal ────────────────────────────────────────
+function render() {
+  if (!DATA || !selectedRegua) return;
+  const regua = DATA.reguas.find(r => r.id === selectedRegua);
+  if (!regua) return;
+
+  const p = regua.periodos[selectedPeriod];
+  const ca = document.getElementById('content-area');
+
+  let html = '';
+
+  // Título
+  const periodLabel = getPeriodLabel(selectedPeriod);
+  html += `<div style="margin-bottom:16px">
+    <h2 style="font-size:1.1rem;font-weight:700">${regua.nome_curto} <span style="color:var(--muted);font-weight:400;font-size:.85rem">/ ${regua.id}</span></h2>
+    <div style="font-size:.78rem;color:var(--muted);margin-top:3px">${periodLabel}</div>
+  </div>`;
+
+  // Aviso de dados parciais
+  if (regua.status === 'parcial') {
+    html += `<div class="partial-notice">⚠️ Régua com coleta parcial — ${regua.obs || 'alguns períodos indisponíveis'}</div>`;
+  }
+
+  if (!p) {
+    html += `<p class="no-data">Dados não disponíveis para este período.</p>`;
+    ca.innerHTML = html;
+    return;
+  }
+
+  // ── KPI Cards ──
+  const txConv = p.leads > 0 ? (p.conv_total / p.leads * 100).toFixed(2) : '0.00';
+  html += `<div class="kpi-row">
+    <div class="kpi-card blue">
+      <div class="kpi-label">Leads (Entered)</div>
+      <div class="kpi-val">${fmt(p.leads)}</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Enviados</div>
+      <div class="kpi-val">${fmt(p.enviados)}</div>
+      <div class="kpi-sub">Entregues: ${fmt(p.entregues)} (${fmtPct(p.tx_entrega)})</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">Conversões</div>
+      <div class="kpi-val">${fmt(p.conv_total)}</div>
+      <div class="kpi-sub">Tx. ${txConv}% sobre leads</div>
+    </div>
+    <div class="kpi-card amber">
+      <div class="kpi-label">Receita Estimada</div>
+      <div class="kpi-val" style="font-size:1.25rem">${fmtR(p.receita)}</div>
+      <div class="kpi-sub">TM: R$ 214,00</div>
+    </div>
+  </div>`;
+
+  // ── Canais disponíveis ──
+  const canais = [];
+  if (p.email)   canais.push({ id:'email',   label:'E-mail',    color:'var(--email-c)', tagClass:'tag-email', d: p.email });
+  if (p.whatsapp) canais.push({ id:'wa',      label:'WhatsApp',  color:'var(--wa-c)',    tagClass:'tag-wa',    d: p.whatsapp });
+  if (p.sms)     canais.push({ id:'sms',      label:'SMS',       color:'var(--sms-c)',   tagClass:'tag-sms',   d: p.sms });
+  if (p.webpush) canais.push({ id:'wp',       label:'Web Push',  color:'var(--wp-c)',    tagClass:'tag-wp',    d: p.webpush });
+
+  // ── Tabela por canal ──
+  html += `<div class="section-title">Performance por Canal</div>`;
+  html += `<div class="table-wrap"><table>
+    <thead><tr>
+      <th>Canal</th>
+      <th>Enviados</th>
+      <th>Entregues</th>
+      <th>Tx. Entrega</th>
+      <th>Aberturas</th>
+      <th>Tx. Abertura</th>
+      <th>Cliques</th>
+      <th>CTOR</th>
+      <th>Conversões</th>
+    </tr></thead>
+    <tbody>`;
+
+  canais.forEach(c => {
+    const d = c.d;
+    html += `<tr>
+      <td><span class="tag ${c.tagClass}"><span class="canal-dot" style="background:${c.color};vertical-align:middle"></span>${c.label}</span></td>
+      <td>${fmt(d.enviados)}</td>
+      <td>${fmt(d.entregues)}</td>
+      <td>${fmtPct(d.tx_entrega)}</td>
+      <td>${d.opens != null ? fmt(d.opens) : '<span class="no-data">n/a</span>'}</td>
+      <td>${d.tx_abertura != null ? fmtPct(d.tx_abertura) : '<span class="no-data">n/a</span>'}</td>
+      <td>${fmt(d.clicks)}</td>
+      <td>${d.ctor != null ? fmtPct(d.ctor) : '<span class="no-data">—</span>'}</td>
+      <td><strong>${fmt(d.conv)}</strong></td>
+    </tr>`;
+  });
+
+  if (!canais.length) {
+    html += `<tr><td colspan="9" class="no-data" style="padding:16px">Sem dados de canais neste período.</td></tr>`;
+  }
+  html += `</tbody></table></div>`;
+
+  // ── Charts placeholder ──
+  html += `<div class="charts-row">
+    <div class="chart-card">
+      <h4>Enviados por Canal</h4>
+      <canvas id="chart-enviados" height="180"></canvas>
+    </div>
+    <div class="chart-card">
+      <h4>Conversões por Canal</h4>
+      <canvas id="chart-conv" height="180"></canvas>
+    </div>
+  </div>`;
+
+  // ── Histórico quinzenal (só se não estiver num período mensal e tivermos dados) ──
+  html += `<div class="section-title">Evolução Quinzenal</div>`;
+  html += buildEvolutionTable(regua);
+
+  ca.innerHTML = html;
+
+  // Render charts
+  renderCharts(canais);
+}
+
+function getPeriodLabel(pid) {
+  const labels = {
+    Q1:'Q1 — 01/07 a 15/07/2026', Q2:'Q2 — 16/07 a 31/07/2026',
+    Q3:'Q3 — 01/08 a 15/08/2026', Q4:'Q4 — 16/08 a 31/08/2026',
+    Q5:'Q5 — 01/09 a 02/09/2026 (parcial)',
+    JUL:'Julho 2026 (Q1+Q2)', AGO:'Agosto 2026 (Q3+Q4)', SET:'Setembro 2026 — parcial (Q5)'
+  };
+  return labels[pid] || pid;
+}
+
+function buildEvolutionTable(regua) {
+  const quinzenas = ['Q1','Q2','Q3','Q4','Q5'];
+  const qLabels   = ['Q1 Jul','Q2 Jul','Q3 Ago','Q4 Ago','Q5 Set'];
+  const metrics = [
+    { key: d => d.leads,     label: 'Leads' },
+    { key: d => d.enviados,  label: 'Enviados' },
+    { key: d => d.entregues, label: 'Entregues' },
+    { key: d => d.conv_total,label: 'Conversões' },
+    { key: d => d.receita,   label: 'Receita', fmt: fmtR },
+  ];
+
+  let html = `<div class="table-wrap"><table>
+    <thead><tr>
+      <th>Métrica</th>
+      ${qLabels.map(l => `<th>${l}</th>`).join('')}
+      <th>Jul Total</th><th>Ago Total</th><th>Set</th>
+    </tr></thead><tbody>`;
+
+  metrics.forEach(m => {
+    html += `<tr><td style="font-weight:600">${m.label}</td>`;
+    quinzenas.forEach(q => {
+      const p = regua.periodos[q];
+      const v = p ? m.key(p) : null;
+      html += `<td>${v != null ? (m.fmt ? m.fmt(v) : fmt(v)) : '<span class="no-data">—</span>'}</td>`;
+    });
+    // Monthly
+    ['JUL','AGO','SET'].forEach(q => {
+      const p = regua.periodos[q];
+      const v = p ? m.key(p) : null;
+      html += `<td style="font-weight:600;background:#f8f9fc">${v != null ? (m.fmt ? m.fmt(v) : fmt(v)) : '<span class="no-data">—</span>'}</td>`;
+    });
+    html += `</tr>`;
+  });
+  html += `</tbody></table></div>`;
+  return html;
+}
+
+let chartEnviados = null, chartConv = null;
+function renderCharts(canais) {
+  if (chartEnviados) chartEnviados.destroy();
+  if (chartConv)     chartConv.destroy();
+
+  if (!canais.length) return;
+
+  const labels  = canais.map(c => c.label);
+  const colors  = canais.map(c => c.color);
+  const envData = canais.map(c => c.d.enviados || 0);
+  const cvData  = canais.map(c => c.d.conv || 0);
+
+  const commonOptions = {
+    responsive: true, maintainAspectRatio: true,
+    plugins: { legend: { display: false } },
+    scales: {
+      y: { beginAtZero: true, ticks: { font: { size: 11 } } },
+      x: { ticks: { font: { size: 11 } } }
+    }
+  };
+
+  chartEnviados = new Chart(document.getElementById('chart-enviados'), {
+    type: 'bar', data: {
+      labels,
+      datasets: [{ data: envData, backgroundColor: colors, borderRadius: 6 }]
+    }, options: commonOptions
+  });
+
+  chartConv = new Chart(document.getElementById('chart-conv'), {
+    type: 'bar', data: {
+      labels,
+      datasets: [{ data: cvData, backgroundColor: colors, borderRadius: 6 }]
+    }, options: { ...commonOptions, scales: { ...commonOptions.scales, y: { beginAtZero: true, ticks: { precision: 0, font: { size: 11 } } } } }
+  });
+}
+
+// ─── Inicialização ───────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
